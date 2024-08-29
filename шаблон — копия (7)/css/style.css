@@ -1,0 +1,137 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.zadanie_one_titel{
+	font-size: 30px;
+	font-weight: 600;	
+}
+.zadanie_one_text::first-letter {
+	color: red;
+	font-size: 27px;
+	font-style: italic;
+}
+.zadanie_two_text::first-line {
+	color: red;
+	font-style: italic;
+}
+.zadanie_three_text::selection {
+	color: rgb(255, 255, 255);
+	background-color: rgb(26, 248, 10);
+}
+.zadanie_four_text::placeholder {
+	color: rgb(85, 255, 0);
+	background-color: #007404;
+}
+.zadanie_five_text1:focus {
+	border: 1px solid rgb(34, 255, 0);
+	box-shadow: 0 0 3px rgb(34, 255, 0);
+	color: #007404;
+	background-color: #007404;
+}
+.zadanie_five_text2:focus {
+	border: 1px solid rgb(202, 3, 0);
+	box-shadow: 0 0 3px rgb(0, 72, 255);
+	color: #e4f403;
+	background-color: #530074;
+}
+.zadanie_five_text3:focus {
+	border: 1px solid rgb(4, 220, 58);
+	box-shadow: 0 0 3px rgb(216, 202, 0);
+	color: #d30303;
+	background-color: #05bce5;
+}
+.zadanie_six_text::after{
+	content: ":конеЦ";
+	color: green;
+}
+.zadanie_six_text::before{
+	content: "Начало:";
+	color: red;
+}
+.ZADACHAka{
+	counter-reset: test;
+}
+.zadanie_seven_text::before {
+	counter-increment: test;
+	content: "Абзац №)"counter(test);
+	color: red;
+}
+.ZADACHAq{
+	counter-reset: test 7;
+}
+.zadanie_8_text::before {
+	counter-increment: test;
+	content: "Абзац №)"counter(test);
+	color: red;
+}
+.ZADACHA9{
+	counter-increment: num;
+}
+.zadanie_9_text::before {
+	counter-increment: num;
+	content: "Абзац №)"counter(num) ". ";
+}
+
+.reset{
+	counter-reset: num 17;
+}
+.ugabuga:first-child {
+	background: -webkit-linear-gradient(90deg, #ff0000,#fffb00,#16ff05,#00f2ff,#3508fd);
+}
+.ugabuga:last-child {
+	background: -webkit-linear-gradient(90deg, #0800ff,#ff5900,#69ff05,#ffe100,#fd0808);
+}
+.ugabuga:nth-child(3) {
+	background: -webkit-linear-gradient(90deg, #ff0000,#ffdd00,#1aff05,#00ddff,#0818fd);
+}
+
+.uga:nth-child(odd) {
+	color: red;
+}
+.uga:nth-child(even) {
+	color: rgb(47, 255, 0);
+}
+.ugab:nth-child(3n) {
+	color: rgb(0, 191, 255);
+}
+.ugabu:nth-last-child(2) {
+	color: rgb(242, 0, 255);
+}
+.ugabug:only-child {
+	color: rgb(39, 157, 23);
+}
+input:checked + label {
+	color: red;
+}
